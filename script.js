@@ -100,6 +100,8 @@ function askQuestion(questionIndex) {
         var userQuestion = questions[questionIndex].title;
         var userChoices = questions[questionIndex].choices;
         questionsDiv.textContent = userQuestion;
+        questionsDiv.setAttribute("class", "questionTitle");
+        
 
     }
     // New for each for question choices
