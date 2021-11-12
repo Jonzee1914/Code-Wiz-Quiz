@@ -52,6 +52,11 @@ p {
     font-weight: bold;
 }
 
+#questionsDiv span {
+    font-size: x-large;
+    font-weight: bold;
+}
+
 #currentTime {
     float: right;
     color: red;

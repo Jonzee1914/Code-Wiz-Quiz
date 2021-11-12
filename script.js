@@ -99,7 +99,7 @@ function askQuestion(questionIndex) {
         // Appends question title only
         var userQuestion = questions[questionIndex].title;
         var userChoices = questions[questionIndex].choices;
-        questionsDiv.textContent = userQuestion;     
+        questionsDiv.innerHTML = "<span>" + userQuestion + "</span>";     
     }
     // New for each for question choices
     userChoices.forEach(function (newItem) {
