@@ -26,15 +26,25 @@ p {
     height: 500px;
 }
 
-#startTime {
+#startQuiz {
     background-color: #1e93c9;
     margin-left: 33%;
     padding: 15px 32px;
     font-size: 20px;
     color: white;
 }
+
+#startQuiz:hover {
+    background-color: #13e3ff;
+}
+
 #questionsDiv {
     margin: 20px;
+}
+
+#questionDiv h1 {
+    font-size: x-large;
+    font-weight: bold;
 }
 
 #currentTime {

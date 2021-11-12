@@ -58,7 +58,7 @@ var score = 0;
 var questionIndex = 0;
 
 var currentTime = document.querySelector("#currentTime");
-var timer = document.querySelector("#startTime");
+var timer = document.querySelector("#startQuiz");
 var questionsDiv = document.querySelector("#questionsDiv");
 var wrapper = document.querySelector("#wrapper");
 
@@ -93,12 +93,14 @@ function askQuestion(questionIndex) {
     // Clear any existing data 
     questionsDiv.innerHTML = "";
     ulCreate.innerHTML = "";
+
     // Loop through all questions in array
     for (var i = 0; i < questions.length; i++) {
         // Appends question title only
         var userQuestion = questions[questionIndex].title;
         var userChoices = questions[questionIndex].choices;
         questionsDiv.textContent = userQuestion;
+
     }
     // New for each for question choices
     userChoices.forEach(function (newItem) {
@@ -223,7 +225,7 @@ function allDone() {
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
-            // Travels to final page
+            // Send to high score
             window.location.replace("./HighScores.html");
         }
     });
