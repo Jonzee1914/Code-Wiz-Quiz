@@ -133,7 +133,7 @@ h1 {
     font-style: italic;
 }
 
-.questionTitle > ul > li {
+li {
     background-color: #1e93c9;
     margin-top: 10px;
     padding: 5px 15px;

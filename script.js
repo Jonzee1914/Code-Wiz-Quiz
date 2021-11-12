@@ -99,10 +99,7 @@ function askQuestion(questionIndex) {
         // Appends question title only
         var userQuestion = questions[questionIndex].title;
         var userChoices = questions[questionIndex].choices;
-        questionsDiv.textContent = userQuestion;
-        questionsDiv.setAttribute("class", "questionTitle");
-        
-
+        questionsDiv.textContent = userQuestion;     
     }
     // New for each for question choices
     userChoices.forEach(function (newItem) {
